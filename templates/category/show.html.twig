@@ -22,5 +22,15 @@
 
     <a href="{{ path('category_edit', {'id': category.id}) }}">edit</a>
 
+
+
+    <ul>
+        {% for post in category.posts %}
+        <li><a href="{{ path('post_show', {'id': post.id}) }}">{{ post.title }}</a></li>
+        {% else %}
+        <li>no records found</li>
+        {% endfor %}
+    </ul>
+
     {{ include('category/_delete_form.html.twig') }}
 {% endblock %}
