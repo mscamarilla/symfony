@@ -11,7 +11,6 @@ class ObsceneWordsValidator extends ConstraintValidator
 {
     public function validate($value, Constraint $constraint): void
     {
-        $pattern = "/(блин)|(нахрен)/";
         $obsceneWords = "/(arse)|(ass)|(bampot)|(bastard)|(beaner)|(bitch)|(blowjob)|(bollocks)|(bollox)|(boner)|(butt)|
         (chesticle)|(chinc)|(chink)|(choad)|(clit)|(cock)|(coochie)|(coochy)|(cooter)|(cum)|(cunnie)|(cunt)|(dago)|(damn)|
         (deggo)|(dick)|(dike)|(dildo)|(dipshit)|(doochbag)|(dookie)|(douche)|(dyke)|(fag)|(fatass)|(fellatio)|(feltch)|
